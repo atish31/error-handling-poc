@@ -5,7 +5,6 @@ function getErrorDetails(errorDetails) {
 }
 
 function throwError(errorDetails) {
-	console.log(errorDetails)
 	try {
 		throw errorDetails;
 	}
