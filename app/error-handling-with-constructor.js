@@ -6,13 +6,13 @@ function getErrorDetails(errorDetails) {
 
 function throwError(errorDetails) {
 	try {
-		throw errorDetails;
+		throw errorDetails.errorMessage;
 	}
 	catch(error) {
-		alert(error.errorMessage + ' ' + error.errorDescription);
+		alert(error);
 	} 
 	finally {
-		alert(errorDetails.nextAction);
+		alert(errorDetails.errorDescription + ' ' + errorDetails.nextAction);
 	}
 }
 

@@ -1,8 +1,8 @@
 export class FieldError {
 	constructor(errorDetails) {
-		this.message = errorDetails.message;
-		this.description = errorDetails.description;
-		this.nextAction = errorDetails.nextAction;
+		this.message = errorDetails.ErrorMessage;
+		this.description = errorDetails.ErrorDescription;
+		this.nextAction = errorDetails.ErrorNextAction;
 	}
 }
 
